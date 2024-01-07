@@ -18,7 +18,7 @@ let data;
 async function getWeatherData(cityValue) {
   try {
     const response = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=${apiKey}`
+      `https://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=${apiKey}`
     );
     if (!response.ok) {
       throw new error("Network response not found");
